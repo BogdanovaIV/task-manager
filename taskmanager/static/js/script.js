@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // sidenav initialization
     let sidenav = document.querySelectorAll(".sidenav");
     M.Sidenav.init(sidenav);
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let datepicker = document.querySelectorAll(".datepicker");
     M.Datepicker.init(datepicker, {
         format: "dd mmmm, yyyy",
-        i18n: {done: "Select"}
+        i18n: { done: "Select" }
     });
 
     // select initialization
@@ -17,4 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // modal initialization
     let modals = document.querySelectorAll('.modal');
     M.Modal.init(modals);
+
+    // collapsible initializataion
+    let collapsibles = document.querySelectorAll(".collapsible");
+    M.Collapsible.init(collapsibles);
+
 });
